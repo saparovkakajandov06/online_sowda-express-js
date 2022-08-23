@@ -1,0 +1,31 @@
+@import "./ecommerce-font.css";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+}
+a {
+	color: #000000;
+}
+a:hover {
+	color: #000000;
+}
+
+button {
+	user-select: none;
+	outline: none;
+}
+
+.App {
+	font-family: "Roboto", "Ubuntu", sans-serif;
+	font-size: 16px;
+	line-height: 1;
+	color: #000000;
+
+	height: 100vh;
+}

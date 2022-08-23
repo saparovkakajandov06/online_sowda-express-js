@@ -1,0 +1,44 @@
+.search {
+	height: 100%;
+	width: 100%;
+
+	&__content {
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+
+	&__toggle {
+		margin-top: 5px;
+		cursor: pointer;
+	}
+
+	&__close-toggle {
+		cursor: pointer;
+	}
+
+	&__panel {
+		position: absolute;
+		top: 45px;
+		left: 0;
+
+		height: 0px;
+		max-height: 350px;
+		width: calc(100% + 0.7px);
+		transition: height 0.2s ease-in;
+		overflow: hidden;
+
+		border-left: 1px solid #000000;
+		border-right: 1px solid #000000;
+
+		&__inner {
+			height: 100%;
+			background-color: #fcfcfc;
+			border-bottom: 1px solid #000000;
+		}
+	}
+
+	&__panel--open {
+		height: 125px;
+	}
+}
